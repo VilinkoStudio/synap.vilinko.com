@@ -10,7 +10,7 @@ const routes = [
     component: SynapHero,
   },
   {
-    path: '/download.html',
+    path: '/download',
     name: 'Download',
     component: SynapDownload,
   },
