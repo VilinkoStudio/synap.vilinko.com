@@ -1,0 +1,52 @@
+name: Deploy Synap to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # 如果你的默认分支是 master，请改为 master
+
+# 授予此 Action 部署 GitHub Pages 的必要权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 如果有新的推送，自动取消正在进行的构建，节约资源
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps: deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build Project
+        run: bun run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 如果你的 Vite 打包输出目录是 dist，保持不变
+          # 如果是 VitePress，请改为 .vitepress/dist
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
