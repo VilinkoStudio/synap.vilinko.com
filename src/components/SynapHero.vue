@@ -7,14 +7,14 @@
       <p class="subtitle">捕捉灵感 快如闪电</p>
       
       <div class="hero-buttons">
-        <a href="download.html" class="md-btn md-btn-filled">
+        <router-link to="/download" class="md-btn md-btn-filled">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
             <polyline points="7 10 12 15 17 10"/>
             <line x1="12" y1="15" x2="12" y2="3"/>
           </svg>
           立即下载
-        </a>
+        </router-link>
         
         <a href="https://docs.vilinko.com/docs/synap/" class="md-btn md-btn-tonal">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -67,7 +67,6 @@
   line-height: 1.2;
   padding-bottom: 0.2em;
   margin-bottom: -0.2em;
-  
   background: linear-gradient(135deg, var(--md-primary), #5279FB, #9AB1FA);
   background-size: 200% 200%;
   -webkit-background-clip: text;
