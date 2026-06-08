@@ -1,0 +1,146 @@
+{
+  "releases": [
+    {
+      "version": "android-v1.0.0-alpha.8",
+      "date": "2026-05-11",
+      "type": "pre-release",
+      "platform": "android",
+      "commit": "bd5cb22",
+      "download_platform": "Github",
+      "download_src": "https://github.com/VilinkoStudio/Synap/releases/download/android-v1.0.0-alpha.8%23/synap-android-v1.0.0-alpha.8.-app-release.apk",
+      "changes": [
+        "增加笔记颜色功能：可为单个笔记设置不同颜色标记；可手动新增预设颜色；标签栏可以筛选颜色标记",
+        "增加草稿箱功能：支持自动保存到草稿箱中，若意外退出而未保存的笔记下次打开时会弹窗提示进行保存；退出编辑页时提示是否保存",
+        "增加更多扫码方式：新增支持安卓相机扫码模式扫码，支持用户自定义扫码App包名",
+        "首页顶部导航栏按钮支持折叠（仅手机可开启）",
+        "其他改进优化：去除开屏页、调整预返回手势动画、星图页面画布扩展到整个页面展示、设置页适配平板多列布局、调整设置页排版"
+      ],
+      "contributors": ["yyckn"]
+    },
+    {
+      "version": "android-v1.0.0-alpha.7",
+      "date": "2026-05-05",
+      "type": "pre-release",
+      "platform": "android",
+      "commit": "ba8bbdc",
+      "download_platform": "Github",
+      "download_src": "https://github.com/VilinkoStudio/Synap/releases/download/android-v1.0.0-alpha.7/synap-android-v1.0.0-alpha.7.-app-release.apk",
+      "changes": [
+        "增加AI相关设置入口，包括：增加AI模型（可填写兼容OpenAI的自定义模型或使用预设模型），管理AI功能可以应用在哪些场景",
+        "新增星图功能",
+        "其他问题和修复：原瀑布流和时间组切换功能移到设置内；修复编辑页光标不会自动移入屏幕内的问题；深浅色设置移到二级页面"
+      ],
+      "contributors": ["Fuwaki", "yyckn"]
+    },
+    {
+      "version": "desktop-linux-v1.0.0-alpha.1",
+      "date": "2026-04-29",
+      "type": "pre-release",
+      "platform": "linux",
+      "commit": "4c0448f",
+      "download_platform": "Github",
+      "download_src": "https://github.com/VilinkoStudio/Synap/releases/download/desktop-linux-v1.0.0-alpha.1/synap-desktop-linux-v1.0.0-alpha.1-linux-x64.tar.gz",
+      "changes": [
+        "完成基于GTK4的Linux桌面端"
+      ],
+      "contributors": ["Fuwaki"]
+    },
+    {
+      "version": "android-v1.0.0-alpha.6",
+      "date": "2026-04-23",
+      "type": "pre-release",
+      "platform": "android",
+      "commit": "15b0ba2",
+      "download_platform": "Github",
+      "download_src": "https://github.com/VilinkoStudio/Synap/releases/download/android-v1.0.0-alpha.6/synap-android-v1.0.0-alpha.6-app-release.apk",
+      "changes": [
+        "编辑页面支持 Markdown 实时渲染，编辑即可实时预览格式效果",
+        "增加首页和编辑页在大屏下的布局适配",
+        "新增使用教程：增加笔记卡片和新建笔记的动画介绍，同时在使用教程开屏增加快速设置（包含颜色、主题色、语言）",
+        "其他问题修复：修复无法在正文中更改复选框选中状态的问题；修复有连续多行标题时行间距过大的问题；修复多行引用样式不对齐的问题；修复点击工具栏的有序列表样式无法接续上一行序号的问题；修复回收站预返回手势动画丢失的问题；在设置中增加官网链接"
+      ],
+      "contributors": ["yyckn"]
+    },
+    {
+      "version": "android-v1.0.0-alpha.5",
+      "date": "2026-04-20",
+      "type": "pre-release",
+      "platform": "android",
+      "commit": "4f93491",
+      "download_platform": "Github",
+      "download_src": "https://github.com/VilinkoStudio/Synap/releases/download/android-v1.0.0-alpha.5/synap-android-v1.0.0-alpha.5-app-release.apk",
+      "changes": [
+        "增加同步功能(beta)，支持局域网配对并连接设备",
+        "设置页UI修复：去除设置的无障碍选项，同步和备份与恢复合并为备份与同步",
+        "重新设计首页标签栏逻辑",
+        "增加扫一扫功能，可以跳转至系统扫描APP",
+        "其他问题修复：修复因翻译导致的报错问题；修复小组件背景过大被裁切的问题；修复浮动工具栏遮挡的问题；修复后台运行Synap时分享功能失效的问题；重新设计部分同步页面UI；增加同步后触发数据重新加载以看到最新数据"
+      ],
+      "contributors": ["Fuwaki", "yyckn"]
+    },
+    {
+      "version": "desktop-v1.0.0-alpha.1",
+      "date": "2026-04-19",
+      "type": "pre-release",
+      "platform": "windows",
+      "commit": "e39bd11",
+      "download_platform": "Github",
+      "download_src": "https://github.com/VilinkoStudio/Synap/releases/tag/android-v1.0.0-alpha.4",
+      "changes": [
+        "首个桌面端版本"
+      ],
+      "contributors": ["KitraMGP"]
+    },
+    {
+      "version": "android-v1.0.0-alpha.3",
+      "date": "2026-04-17",
+      "type": "pre-release",
+      "platform": "android",
+      "commit": "45f9b14",
+      "download_platform": "Github",
+      "download_src": "https://github.com/VilinkoStudio/Synap/releases/download/android-v1.0.0-alpha.3/synap-android-v1.0.0-alpha.3-app-release.apk",
+      "changes": [
+        "增加一键记笔记小组件等四种快捷记笔记方式",
+        "包括：一键记笔记小组件、Android控制中心快捷卡片、系统分享菜单（仅限分享纯文本时）、系统选取文字菜单"
+      ],
+      "contributors": ["yyckn"]
+    },
+    {
+      "version": "android-v1.0.0-alpha.2",
+      "date": "2026-04-16",
+      "type": "pre-release",
+      "platform": "android",
+      "commit": "bd93138",
+      "download_platform": "Github",
+      "download_src": "https://github.com/VilinkoStudio/Synap/releases/download/android-v1.0.0-alpha.2/synap-android-v1.0.0-alpha.2-app-release.apk",
+      "changes": [
+        "增加笔记分享功能",
+        "重新调整编辑页的UI",
+        "修复历史遗留bug"
+      ],
+      "contributors": ["yyckn"]
+    },
+    {
+      "version": "android-v1.0.0-alpha.1",
+      "date": "2026-04-15",
+      "type": "pre-release",
+      "platform": "android",
+      "commit": "ea24a90",
+      "download_platform": "Github",
+      "download_src": "https://github.com/VilinkoStudio/Synap/releases/download/android-v1.0.0-alpha.1/synap-android-v1.0.0-alpha.1-app-release.apk",
+      "changes": [
+        "建立项目骨架，实现笔记存储、服务、搜索、同步等底层核心逻辑，增加安卓端UI核心界面",
+        "重新设计搜索、设置部分的UI，增加app图标",
+        "启用 R8 优化压缩 DEX 字节码来显著缩减 APK 尺寸",
+        "增加多语言设置入口",
+        "修复删除笔记时出现的崩溃bug",
+        "为 HomeScreen 添加 Compose Preview",
+        "增加笔记导入导出功能；增加标签功能；增加笔记删除后撤销提醒；适配部分页面的大屏UI",
+        "界面新增5种语言的翻译（繁体中文(HK)、繁体中文(TW)、英语、日语、韩语）；重新排列设置页选项，增加更换主题色功能，增加字体的字体、字重、行距调节功能",
+        "增加时间线和标签推荐功能",
+        "增加安卓原生Markdown编辑器；增加二维码扫描分享功能(beta)；增加笔记卡片多选功能；增加页面间过渡动画和预返回手势动画，适配系统手势提示线（小白条）；时间线和瀑布流切换移至右上角"
+      ],
+      "contributors": ["Fuwaki", "yyckn", "KitraMGP"]
+    }
+  ]
+}
