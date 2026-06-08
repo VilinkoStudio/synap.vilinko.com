@@ -164,7 +164,10 @@ const closeDropdown = () => {
 onMounted(async () => {
   window.addEventListener('click', closeDropdown)
   try {
-    const response = await fetch('/releases.json')
+    const baseUrl = import.meta.env.BASE_URL.endsWith('/') 
+      ? import.meta.env.BASE_URL 
+      : `${import.meta.env.BASE_URL}/`
+    const response = await fetch(`${baseUrl}releases.json`)
     if (!response.ok) throw new Error('数据文件加载失败')
     releasesData.value = await response.json()
   } catch (err) {
