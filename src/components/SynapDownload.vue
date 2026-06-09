@@ -634,4 +634,38 @@ const filteredReleases = computed(() => {
   .release-actions { width: 100%; }
   .btn-download { width: 100%; justify-content: center; }
 }
+
+/* 浅色模式适配 */
+@media (prefers-color-scheme: light) {
+  .md-dropdown-menu {
+    background-color: #f5f5f5; /* 浅灰色背景 */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.05);
+  }
+
+  .dropdown-item {
+    color: #333333; /* 深色文字 */
+  }
+
+  .dropdown-item:hover {
+    background-color: #e0e0e0;
+  }
+
+  .item-title {
+    color: #333333;
+  }
+
+  .item-title {
+    color: #212121; 
+  }
+
+  .item-subtitle {
+    color: #757575; /* 浅灰色文字 */
+    opacity: 1;
+  }
+
+  .item-icon {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+  }
+}
 </style>
