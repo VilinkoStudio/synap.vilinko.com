@@ -8,7 +8,7 @@
 <style>
 @font-face {
   font-family: 'MiSans';
-  src: url('https://cdn.jsdelivr.net/gh/TrionesType/misans@latest/Web/Woff2/MiSans-Semibold.woff2') format('woff2');
+  src: url('/MiSans-Semibold.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
