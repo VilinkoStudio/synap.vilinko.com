@@ -4,9 +4,9 @@
       <div class="footer-meta">
         <p class="copyright">Copyright © {{ currentYear }} Vilinko. All rights reserved.</p>
         <div class="footer-links">
-          <a href="https://github.com/VilinkoStudio/Synap" target="_blank" class="footer-link">GitHub</a>
-          <a href="https://docs.vilinko.com/agreement/privacy.html" target="_blank" class="footer-link">隐私政策</a>
-          <a href="https://docs.vilinko.com/agreement/tos.html" target="_blank" class="footer-link">服务条款</a>
+          <a :href="urls['GITHUB.SYNAP']" target="_blank" class="footer-link">GitHub</a>
+          <a :href="urls['VILINKO.PRIVACY']" target="_blank" class="footer-link">隐私政策</a>
+          <a :href="urls['VILINKO.TOS']" target="_blank" class="footer-link">服务条款</a>
         </div>
       </div>
     </div>
@@ -15,6 +15,7 @@
 
 <script setup>
 import { computed } from 'vue';
+import urls from '../urls.json';
 
 const currentYear = computed(() => {
   try {
